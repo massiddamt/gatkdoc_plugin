@@ -1,4 +1,3 @@
-# [<img src="docs/images/MultiQC_logo.png" width="250" title="MultiQC">](https://github.com/ewels/MultiQC)
 # GATK DepthOfCoverage MultiQC Plugin
 
 ### Installation
