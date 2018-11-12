@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 
-""" MultiQC example plugin module """
+""" MultiQC gatkdoc plugin module """
 
 from __future__ import print_function
 from collections import OrderedDict
 import logging
-
 from multiqc import config
 from multiqc.plots import linegraph
 from multiqc.modules.base_module import BaseMultiqcModule
@@ -26,7 +25,7 @@ class MultiqcModule(BaseMultiqcModule):
             name = 'GATK DepthOfCoverage',
             target = "gatkdoc",
             anchor = 'gatkdoc',
-            href = 'https://github.com/MultiQC/example-plugin',
+            href = 'https://bitbucket.org/massiddaMT/gatkdoc_plugin',
             info = " is a plugin for GATK DepthOfCoverage output inclusion in the MultQC report."
         )
 
@@ -48,8 +47,6 @@ class MultiqcModule(BaseMultiqcModule):
                 'format': '{:,.2f}'
             }
         self.general_stats_addcols(self.gatkdoc_data, headers)
-
-
 
         # Filter out samples matching ignored sample names
         self.gatkdoc_data = self.ignore_samples(self.gatkdoc_data)

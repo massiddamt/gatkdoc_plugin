@@ -1,26 +1,23 @@
 #!/usr/bin/env python
 """
-GATK plugin for MultiQC, showing how to structure code
-and plugin hooks to work effectively with the main MultiQC code.
-
+GATK DepthOfCoverage plugin for MultiQC.
 For more information about MultiQC, see http://multiqc.info
 """
 
 from setuptools import setup, find_packages
 
-version = '0.1'
+version = '1.1'
 
 setup(
     name = 'multiqc_gatkdoc_plugin',
     version = version,
-    author = 'Phil Ewels',
+    author = 'Matteo Massidda',
     author_email = 'matteo.massidda@crs4.it',
     description = "GATK DepthOfCoverage MultiQC plugin",
     long_description = __doc__,
     keywords = 'bioinformatics',
-    url = 'https://github.com/MultiQC/example-plugin',
-    download_url = 'https://github.com/MultiQC/example-plugin/releases',
-    license = 'MIT',
+    url = 'https://bitbucket.org/massiddaMT/gatkdoc_plugin',
+    license = '###',
     packages = find_packages(),
     include_package_data = True,
     install_requires = [

@@ -10,7 +10,7 @@ http://click.pocoo.org/5/
 import click
 
 # Sets config.kwargs['disable_plugin'] to True if specified (will be False otherwise)
-disable_plugin = click.option('--disable-example-plugin', 'disable_plugin',
+disable_plugin = click.option('--disable-gatkdoc-plugin', 'disable_plugin',
     is_flag = True,
-    help = "Disable the Example MultiQC plugin on this run"
+    help = "Disable the GATK DepthOfCoverage MultiQC plugin on this run"
 )
