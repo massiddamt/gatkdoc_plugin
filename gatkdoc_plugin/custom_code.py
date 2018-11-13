@@ -37,7 +37,7 @@ def gatkdoc_plugin_execution_start():
 
     # Add to the search patterns used by modules
     if 'gatkdoc/key_value_pairs' not in config.sp:
-        config.update_dict( config.sp, { 'gatkdoc/key_value_pairs': { 'fn': '*.depthOfCov.COUNT_READS.sample_summary' } } )
+        config.update_dict( config.sp, { 'gatkdoc/key_value_pairs': { 'fn': '*.sample_summary' } } )
 
     # Some additional filename cleaning
     config.fn_clean_exts.extend([
